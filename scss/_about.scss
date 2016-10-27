@@ -1,0 +1,160 @@
+#about{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/gallery/1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+}
+
+.welcome{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.intro{
+  display:none;
+}
+
+.m-intro {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.m-intro h2{
+  font-size: 25px;
+  text-align: center;
+  margin: 25px 0 5px 0;
+}
+
+.m-intro p{
+  font-size: 18px;
+  margin: 10px auto 0 auto;
+  line-height: 20px;
+  text-align: justify;
+  width: 80%;
+
+}
+
+.m-rooms {
+  height: 250px;
+  position: absolute;
+  top: 350px;
+}
+
+.m-rooms h3{
+  font-size: 20px;
+  text-align: center;
+}
+
+.m-rooms p{
+  font-size: 18px;
+  margin: 10px auto 0 auto;
+  //margin: 10px auto 20px auto;
+  line-height: 20px;
+  text-align: justify;
+  width: 80%;
+}
+
+.arrow-logo{
+  width: 70%;
+  height: 20px;
+  z-index: 2;
+  margin: 0 auto;
+  background-image: url("../img/arrow2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@media(min-width: 600px){
+
+  #about{
+    height: 700px;
+    background-image: none;
+    display: flex;
+  }
+  .welcome{
+     width: 50%;
+    height: 700px;
+    background-image: url("../img/gallery/1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: static;
+  }
+
+  .m-intro{
+   display: none;
+  }
+
+  .m-rooms{
+    display:none;
+  }
+
+  .intro{
+    background-color: ghostwhite;
+    display: block;
+    width: 50%;
+    height: 700px;
+    float: right;
+  }
+
+  .about-intro{
+    width: 70%;
+    margin: 70px auto;
+  }
+
+  .rooms{
+    width: 70%;
+    margin: 0 auto;
+
+  }
+
+  .intro h2{
+    font-size: 25px;
+    text-align: center;
+    margin: 25px 0;
+  }
+
+  .intro p{
+    font-size: 18px;
+    margin: 0 30px;
+    line-height: 20px;
+    text-align: justify;
+  }
+
+  .rooms h3{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .rooms p{
+    font-size: 18px;
+    margin: 0 20px;
+    line-height: 20px;
+    text-align: justify;
+  }
+
+
+
+  .arrow-logo{
+    width: 70%;
+    height: 40px;
+    background: url("../img/arrow2.png") center/cover no-repeat;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+}

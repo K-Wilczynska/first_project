@@ -1,0 +1,58 @@
+footer{
+  background-color: #1a1a1a;
+}
+
+.footer-wrap{
+  height: 110px;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-wrap p{
+  font-size: 13px;
+  color: darkgray;
+}
+
+.social{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a{
+  font-size: 40px;
+}
+
+.fa-facebook{
+  color: #3b5998;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.fa-twitter{
+  color: #00aced;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.fa-youtube-play{
+  color: #bb0000;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.fa-google{
+  color: #dd4b39;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.fa-instagram{
+  color: #bc2a8d;
+  font-size: 20px;
+  padding: 10px;
+}
