@@ -30,6 +30,11 @@
   overflow: hidden;
 
 
+  opacity:0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease-in-out;
+
+
   background: url("../img/thumb1.jpg") center/cover no-repeat;
 
   &:hover .thumb-overlay{
@@ -94,6 +99,12 @@
 
 .thumb-item:nth-child(8) {
   background: url("../img/thumb8.jpg") center/cover no-repeat;
+}
+
+
+.land{
+  opacity:1;
+  transform: translateX(0px);
 }
 
 

@@ -170,6 +170,20 @@ $(document).ready(function(){
             "transform" : "translate(0px, "+ wScroll /7.8 +"%)"
         });
 
+        if(wScroll > $("#projects").offset().top - ($(window).height() / 1.2)){
+
+            $(".thumb-item").each(function(i){
+
+                setTimeout(function(){
+
+                $(".thumb-item").eq(i).addClass("land");
+
+                }, 150 * (i+1));
+
+            });
+
+        }
+
 
     });
 
