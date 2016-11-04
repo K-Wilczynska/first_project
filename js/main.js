@@ -160,6 +160,18 @@ $(document).ready(function(){
 
 
 
+//------------parallax header----------------------------
+    $(window).on("scroll", function (){
+
+        var wScroll = $(this).scrollTop();
+
+        $(".header-logo").css({
+
+            "transform" : "translate(0px, "+ wScroll /7.8 +"%)"
+        });
+
+
+    });
 
 
 
