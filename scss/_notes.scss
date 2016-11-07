@@ -1,0 +1,41 @@
+#notes{
+  width: 100%;
+  height: 500px;
+  background: url("../img/notes7.jpg") center/cover no-repeat;
+  margin-bottom: 100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  background-attachment: fixed;
+  color: #373738;
+
+  h3{
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  p{
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    //position: absolute;
+  }
+}
+
+@media screen and (min-width: 540px){
+  #notes {
+    p {
+      font-size: 25px;
+      line-height: 50px;
+      margin: 0;
+
+    }
+
+    h3{
+      font-size: 30px;
+    }
+  }
+
+}

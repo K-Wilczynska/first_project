@@ -170,6 +170,12 @@ $(document).ready(function(){
             "transform" : "translate(0px, "+ wScroll /7.8 +"%)"
         });
 
+        $("#notes").find("p").css({
+
+            "transform" : "translate("+$("#notes").find("p").offset().top+", "+ wScroll /7.8 +"%)"
+        });
+
+
         if(wScroll > $("#projects").offset().top - ($(window).height() / 1.2)){
 
             $(".thumb-item").each(function(i){
