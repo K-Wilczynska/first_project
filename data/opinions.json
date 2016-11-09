@@ -1,0 +1,15 @@
+[
+  {
+    "picture": "client1.jpg",
+    "name": "John Smith",
+    "title": "Marketing director",
+    "quote": "<p><strong>Nunc aliquam leo eu suscipit porttitor. </strong> Interdum quis risus. Vestibulum vel justo metus. Vivamus pulvinar enim ut neque pulvinar facilisis. Suspendisse facilisis non velit sed ullamcorper. Nunc vitae odio purus. Proin viverra tortor vestibulum quam dignissim congue. Duis sed imperdiet neque</p>"
+  },
+
+  {
+    "picture": "client2.jpg",
+    "name": "Justin Bieber",
+    "title": "Sales department",
+    "quote": "<p><strong>Nunc aliquam leo eu suscipit porttitor. </strong> Interdum quis risus. Vestibulum vel justo metus. Vivamus pulvinar enim ut neque pulvinar facilisis. Suspendisse facilisis non velit sed ullamcorper. Nunc vitae odio purus. Proin viverra tortor vestibulum quam dignissim congue. Duis sed imperdiet neque</p>"
+  }
+]

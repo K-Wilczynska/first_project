@@ -160,7 +160,7 @@ $(document).ready(function(){
 
 
 
-//------------parallax header----------------------------
+//------------parallax---&---scroll events----------------------------
     $(window).on("scroll", function (){
 
         var wScroll = $(this).scrollTop();
@@ -191,10 +191,79 @@ $(document).ready(function(){
         }
 
 
-    });
+    });  // end of window on.scroll function
+
+
+    // var opinions = populateOpinions();
+
+    // function populateOpinions () {
+    //     $.getJSON("data/opinions.json",function( opinionsJson ){
+    //         return opinionsJson.toString();
+    //     });
+    // }
+
+    // var opinions = $.getJSON("data/opinions.json",function( opinionsJson ){
+    //     console.log(opinionsJson.length);
+    //     var unit = $(".client-unit");
+    //
+    //     var unitClone = unit.clone();
+    //
+    //     unit.find(".client-icon").find(".client-name").text(opinionsJson[0].name);
+    //
+    // });
+    //
+    // console.log(opinions);
+
+
+
+    function clientSlider(){
+
+        $(".client-unit").first().addClass("current-unit");      // .current-unit is added to the first unit by default
+
+
+
+        $(".client-arrow-next, .client-arrow-prev").on("click", function(){   // on click event added to both arrows
+
+            var $this = $(this);
+            var currentUnit = $(".clients-slider").find(".current-unit");          // finds element that currently has .current-unit
+            var position = $(".clients-slider").children().index(currentUnit);     // finds the position of that element
+            var CUlength = $(".client-unit").length;                               // get the length of all .client-unit elements
+
+            console.log(currentUnit);
+            console.log(position);
+            console.log(CUlength);
+
+            if($this.hasClass("client-arrow-next")) {   // identify click on the right arrow
+                if (position < CUlength - 1) {
+                    $(".current-unit").removeClass("current-unit").next().addClass("current-unit");  // move the .current-unit to the next element
+                }
+                else {   // if .current-unit is on the last element of our slider, jump to the first element
+                    $(".client-unit").removeClass("current-unit").first().addClass("current-unit");
+                }
+            }
+            else{   // identify click on the left arrow
+                if(position === 0 ){
+                    $(".client-unit").removeClass("current-unit").last().addClass("current-unit");  // move the .current-unit to the prev element
+                }
+                else{     // if .current-unit is on the first element of our slider, jump to the last element
+                    $(".current-unit").removeClass("current-unit").prev().addClass("current-unit");
+                }
+
+            }
+
+        });
+
+    }
+
+    clientSlider();
 
 
 
 
-});
+
+
+
+
+
+}); // end of document ready
 

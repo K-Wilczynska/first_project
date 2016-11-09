@@ -1,6 +1,7 @@
 #clients {
 
   padding: 100px 0;
+  position: relative;
 
   h2 {
     width: 100%;
@@ -13,13 +14,25 @@
 .clients-slider{
   width: 100%;
   position: relative;
+  padding-bottom: 400px;
 
 
   .client-unit{
     max-width: 750px;
-    margin: 0 auto 50px;
+    margin: 0 0 0 -375px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 3;
     display:flex;
+    opacity: 0;
 
+    transition: all 0.5s ease-in-out;
+
+
+    &.current-unit{
+      opacity: 1;
+    }
 
     .client-icon{
       min-width: 300px;
@@ -52,7 +65,6 @@
       margin-top: -10px;
       position: relative;
 
-
       img{
         position: absolute;
 
@@ -70,7 +82,39 @@
         right: 15px;
       }
 
-    }
+    } //end of .client-option
 
+  } //end of .client-unit
+
+} //end of .client-slider
+
+
+.client-arrows{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+
+  div{
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
   }
+  .client-arrow-next{
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+
+  .client-arrow-prev{
+    left: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
 }
