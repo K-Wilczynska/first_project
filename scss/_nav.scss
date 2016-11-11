@@ -1,40 +1,38 @@
 #nav{
   background-color: rgba(255, 255, 255, 1);
-  z-index: 2;
-  height: 55px;
+  //height: 40px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 
 .nav-wrap{
-  height:50px
+  //height:40px
 }
 
 .logo-wrap{
   position: relative;
   width: 100px;
-  //height: 100px;
   float: left;
-  //overflow: hidden;
 }
 
 .logo{
   background: url("../img/logo5.png") center/contain no-repeat;
   position: absolute;
   width: 160px;
-  height:50px;
+  height:40px;
   top: 3px;
 }
 
 .button{
   float: right;
   border: none;
-  padding: 8px 20px;
+  padding: 0px 20px;
   border-radius: 3px;
-  font-size: 30px;
+  font-size: 25px;
 
 }
 
@@ -43,11 +41,10 @@
   text-align: center;
   list-style: none;
   background-color: rgba(255, 255, 255, 0.89);
-  padding: 1em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  padding-top: 30px;
 }
 
 .menu-li {
@@ -55,12 +52,12 @@
 }
 
 .menu-li a{
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
   text-decoration: none;
   color: #1a1a1a;
   display: block;
-  padding: 40px;
+  padding: 20px;
 }
 
 
@@ -82,6 +79,7 @@
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
+    padding: 0;
   }
 
   .menu-li{
@@ -93,14 +91,15 @@
 
   .menu-li a{
     display:block;
-    padding: 10px 40px;
-  }
+    padding: 8px 40px;
+    border-bottom: 2px solid transparent;
 
-  .menu-li a:hover{
-    border-bottom: 2px solid black;
-    background-color: rgba(245, 245, 245, 0.9);
-    //background: rgba(254, 250, 153, 0.7);
-    transition: background-color 0.5s ease;
+    &:hover{
+      border-bottom: 2px solid black;
+      background-color: rgba(245, 245, 245, 0.9);
+      transition: background-color 0.5s ease;
+
+    }
   }
 
   .logo:hover{
@@ -113,6 +112,6 @@
 @media screen and (orientation: landscape){
 
   .menu-li{
-    padding: 20px;
+    //padding: 20px;
   }
 }

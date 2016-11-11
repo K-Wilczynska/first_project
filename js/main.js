@@ -167,7 +167,7 @@ $(document).ready(function(){
 
         $(".header-logo").css({
 
-            "transform" : "translate(0px, "+ wScroll /7.8 +"%)"
+            "transform" : "translate(0px, "+ wScroll / 3.4 +"%)"
         });
 
         $("#notes").find("p").css({
@@ -219,7 +219,19 @@ $(document).ready(function(){
     function clientSlider(){
 
         $(".client-unit").first().addClass("current-unit");      // .current-unit is added to the first unit by default
+        $(".clients-mobile-nav span").first().addClass("current-unit");
 
+        $(".clients-mobile-nav span").on("click", function(){
+            var $this = $(this);
+            var $siblings = $this.parent().children();
+            var position = $siblings.index($this);
+
+
+
+            $(".client-unit").removeClass("current-unit").eq(position).addClass("current-unit");
+            $siblings.removeClass("current-unit");
+            $this.addClass("current-unit");
+        });
 
 
         $(".client-arrow-next, .client-arrow-prev").on("click", function(){   // on click event added to both arrows

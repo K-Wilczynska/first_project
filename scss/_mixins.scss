@@ -5,3 +5,8 @@
     clear: both;
   }
 }
+
+@mixin evenSize($number){
+  width: $number;
+  height: $number;
+}

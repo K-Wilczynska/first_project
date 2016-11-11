@@ -12,13 +12,13 @@
     margin: 0 auto;
     text-align: center;
     padding-bottom: 15px;
-    font-size: 40px;
+    font-size: 25px;
   }
 
   p{
     width: 80%;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 15px;
     text-align: justify;
     padding-top: 19px;
   }
@@ -58,37 +58,37 @@ form{
     margin: 0 auto;
     text-align: center;
     padding: 20px 0;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 40px;
   }
 
   label{
-    font-size: 22px;
+    font-size: 18px;
     padding-top: 10px;
   }
 
   button{
-    width: 40%;
+    width: 30%;
     height: 50px;
     background-color: black;
     margin-top: 10px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 50px;
     cursor: pointer;
   }
 }
 
 input{
-  width: 80%;
-  height: 50px;
+  width: 60%;
+  height: 40px;
   line-height: 50px;
   font-size: 25px;
 }
 
 
 textarea{
-  width: 80%;
+  width: 60%;
   height: 300px;
   font-size: 25px;
 }
@@ -212,6 +212,15 @@ textarea{
     @include clearfix;
     padding-top: 50px;
     border-left:none;
+
+
+    button{
+      width: 40%
+    }
+  }
+
+  input, textarea{
+    width: 80%;
   }
 
 }
