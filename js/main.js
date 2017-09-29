@@ -9,21 +9,18 @@ $(document).ready(function(){
     });
 
 
-    $(".menu-li").find("a").on("click", function(){
+    $(".menu-li").find("a").on("click", function(e){
+
         var $href = $(this).attr('href');
-        var $anchor = $($href).offset();
-        $('body').animate({
-            scrollTop: $anchor.top
+        var $anchor = $($href).offset().top;
+        $('html, body').animate({
+            scrollTop: $anchor
         },1000);
-
-
-        // menu.toggle();
-
     });
 
 
     $(".logo").on("click", function(){
-        $('body').animate({
+        $('html, body').animate({
             scrollTop: 0
         },1000)
 
